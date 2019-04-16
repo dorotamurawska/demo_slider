@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Oranienbaum';
+    src: url('Oranienbaum.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    position: relative;
+    margin: 10vh auto;
+    height: 80vh;
+    min-height: 500px;
+    width: 100%;
+    max-width: 1280px;
+    text-align: center;
+    font-family: 'Oranienbaum', arial;
+}
+
+h1 {
+    position: absolute;
+    /* margin-top: 100px 0; */
+    top: 32%;
+    left: 50%;
+    /* width: 35vmax; */
+    transform: translate(-50%, -100%);
+    font-size: 50px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.car {
+    position: absolute;
+    /* top: 15vh;
+    left: 20%; */
+    width: 25vmax;
+    max-width: 25%;
+    height: 25vmax;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+}
+
+.car {
+    position: absolute;
+    top: 40%;
+    opacity: .7;
+    transition: .4s linear;
+}
+
+.car.left {
+    left: 19%;
+    background-image: url(img/car0.png);
+    cursor: pointer;
+}
+
+.car.right {
+    right: 19%;
+    background-image: url(img/car2.png);
+    transform: translate(50%, -50%);
+    cursor: pointer;
+}
+
+.car.active {
+    margin-top: 10x;
+    top: 50%;
+    left: 50%;
+    width: 30vmax;
+    max-width: 30%;
+    height: 30vmax;
+    background-image: url(img/car1.png);
+    opacity: 1;
+}
+
+.desc {
+    position: absolute;
+    margin: 100px 0;
+    top: 50%;
+    left: 50%;
+    width: 35vmax;
+    transform: translate(-50%, 0);
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    opacity: .5;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+.arrow.left {
+    left: 2%;
+    transform: rotate(180deg);
+}
+
+.arrow.right {
+    right: 2%;
+}
+
+.arrow img {
+    max-width: 26px;
+    width: 2.04vw;
+}
