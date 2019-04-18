@@ -21,11 +21,14 @@
 }
 
 h1 {
+    display: none;
+}
+
+h1.active {
+    display: block;
     position: absolute;
-    /* margin-top: 100px 0; */
     top: 32%;
     left: 50%;
-    /* width: 35vmax; */
     transform: translate(-50%, -100%);
     font-size: 50px;
     font-weight: normal;
@@ -33,9 +36,10 @@ h1 {
 }
 
 .car {
+    display: none;
     position: absolute;
-    /* top: 15vh;
-    left: 20%; */
+    top: 50%;
+    left: 50%;
     width: 25vmax;
     max-width: 25%;
     height: 25vmax;
@@ -43,22 +47,21 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate(-50%, -50%);
-}
-
-.car {
-    position: absolute;
-    top: 40%;
     opacity: .7;
     transition: .4s linear;
 }
 
 .car.left {
+    display: block;
+    top: 40%;
     left: 19%;
     background-image: url(img/car0.png);
     cursor: pointer;
 }
 
 .car.right {
+    display: block;
+    top: 40%;
     right: 19%;
     background-image: url(img/car2.png);
     transform: translate(50%, -50%);
@@ -66,6 +69,7 @@ h1 {
 }
 
 .car.active {
+    display: block;
     margin-top: 10x;
     top: 50%;
     left: 50%;
@@ -76,7 +80,12 @@ h1 {
     opacity: 1;
 }
 
-.desc {
+p {
+    display: none;
+}
+
+p.active {
+    display: block;
     position: absolute;
     margin: 100px 0;
     top: 50%;
@@ -97,12 +106,12 @@ h1 {
     opacity: 1;
 }
 
-.arrow.left {
+.arrow.arrow-left {
     left: 2%;
     transform: rotate(180deg);
 }
 
-.arrow.right {
+.arrow.arrow-right {
     right: 2%;
 }
 
